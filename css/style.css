@@ -764,3 +764,9 @@ h6,
         display: block !important;
     }
 }
+
+.team-item img {
+    width: 100%;
+    height: 370px; /* Bạn có thể điều chỉnh chiều cao này tùy ý (ví dụ: 250px, 300px) */
+    object-fit: cover; /* Giúp ảnh không bị móp, méo khi ép kích thước */
+}
