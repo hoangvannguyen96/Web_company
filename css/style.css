@@ -770,3 +770,55 @@ h6,
     height: 370px; /* Bạn có thể điều chỉnh chiều cao này tùy ý (ví dụ: 250px, 300px) */
     object-fit: cover; /* Giúp ảnh không bị móp, méo khi ép kích thước */
 }
+
+/* Khung dải ngang tinh tế */
+.brand-strip-container {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 15px 0;
+    background: #ffffff; /* Hoặc đổi thành #f8f9fa nếu muốn nền xám nhạt */
+    border-top: 1px solid #eee; /* Đường kẻ mờ trên và dưới để định hình dải */
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Thanh chạy chứa logo nối đuôi nhau */
+.brand-strip-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 20s linear infinite;
+}
+
+/* Từng ô chứa logo */
+.brand-item {
+    padding: 0 40px; /* Khoảng cách vừa phải giữa các thương hiệu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Kích thước logo vừa vặn, không quá to */
+.brand-item img {
+    height: 50px; /* Độ cao vừa phải, sang trọng */
+    max-width: 150px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Tự động dừng lại khi di chuột vào (để khách hàng kịp nhìn) */
+.brand-strip-container:hover .brand-strip-track {
+    animation-play-state: paused;
+}
+
+/* Hiệu ứng di chuyển mượt mà từ phải sang trái */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Chạy mượt qua 1/3 độ dài (vì ta nhân bản thành 3 cụm logo) */
+        transform: translateX(-33.33%); 
+    }
+}
