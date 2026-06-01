@@ -158,7 +158,7 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -219,7 +219,7 @@ h6,
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -229,7 +229,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/anhnen4.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -505,7 +505,7 @@ h6,
 }
 
 .project-item:hover .project-title,
-.project-carousel .owl-item.center .project-title  {
+.project-carousel .owl-item.center .project-title {
     bottom: -60px;
 }
 
@@ -597,6 +597,7 @@ h6,
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -604,6 +605,7 @@ h6,
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -702,28 +704,33 @@ h6,
 
 /* Khối cha chứa Chổi Than và các mục con */
 .dropdown-submenu {
-    position: relative; /* Tạo mốc tọa độ cố định */
+    position: relative;
+    /* Tạo mốc tọa độ cố định */
 }
 
 /* Định vị cấu trúc Menu Con nằm bên phải và giữ trạng thái ẩn */
 .dropdown-submenu .submenu-items {
     display: none !important;
     position: absolute;
-    left: 100%;       /* Đẩy hẳn sang cạnh bên phải của menu chính */
-    top: 0;           /* Nằm ngang hàng góc trên với chữ Chổi Than */
-    min-width: 220px; /* Chiều rộng menu con */
-    background-color: #f8f9fa; /* Màu nền trùng màu menu Bootstrap */
+    left: 100%;
+    /* Đẩy hẳn sang cạnh bên phải của menu chính */
+    top: 0;
+    /* Nằm ngang hàng góc trên với chữ Chổi Than */
+    min-width: 220px;
+    /* Chiều rộng menu con */
+    background-color: #f8f9fa;
+    /* Màu nền trùng màu menu Bootstrap */
     z-index: 1050;
     border-radius: 0 0.25rem 0.25rem 0.25rem;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
-    
+
     /* MẸO GIỮ CHUỘT: Tạo vùng đệm tàng hình nối liền khoảng trống */
     padding-left: 15px;
     margin-left: -15px;
 }
 
 /* GIỮ CHO MENU ĐỨNG YÊN: Khi di chuột vào vùng của .dropdown-submenu, menu con hiện ra */
-.dropdown-submenu:hover > .submenu-items {
+.dropdown-submenu:hover>.submenu-items {
     display: block !important;
 }
 
@@ -732,8 +739,10 @@ h6,
     padding: 0.5rem 1.5rem;
     background-color: #f8f9fa;
 }
+
 .dropdown-submenu .submenu-items .dropdown-item:hover {
-    background-color: #e9ecef; /* Đổi màu nền khi chọn menu con */
+    background-color: #e9ecef;
+    /* Đổi màu nền khi chọn menu con */
 }
 
 /* Thêm mũi tên nhỏ ">" bên phải chữ Chổi Than */
@@ -742,6 +751,7 @@ h6,
     justify-content: space-between;
     align-items: center;
 }
+
 .dropdown-toggle-custom::after {
     display: inline-block;
     content: "";
@@ -760,6 +770,7 @@ h6,
         margin-left: 0;
         box-shadow: none;
     }
+
     .dropdown-submenu:hover .submenu-items {
         display: block !important;
     }
@@ -767,8 +778,10 @@ h6,
 
 .team-item img {
     width: 100%;
-    height: 370px; /* Bạn có thể điều chỉnh chiều cao này tùy ý (ví dụ: 250px, 300px) */
-    object-fit: cover; /* Giúp ảnh không bị móp, méo khi ép kích thước */
+    height: 370px;
+    /* Bạn có thể điều chỉnh chiều cao này tùy ý (ví dụ: 250px, 300px) */
+    object-fit: cover;
+    /* Giúp ảnh không bị móp, méo khi ép kích thước */
 }
 
 /* Khung dải ngang tinh tế */
@@ -776,8 +789,10 @@ h6,
     overflow: hidden;
     white-space: nowrap;
     padding: 15px 0;
-    background: #ffffff; /* Hoặc đổi thành #f8f9fa nếu muốn nền xám nhạt */
-    border-top: 1px solid #eee; /* Đường kẻ mờ trên và dưới để định hình dải */
+    background: #ffffff;
+    /* Hoặc đổi thành #f8f9fa nếu muốn nền xám nhạt */
+    border-top: 1px solid #eee;
+    /* Đường kẻ mờ trên và dưới để định hình dải */
     border-bottom: 1px solid #eee;
     width: 100%;
     display: flex;
@@ -793,7 +808,8 @@ h6,
 
 /* Từng ô chứa logo */
 .brand-item {
-    padding: 0 40px; /* Khoảng cách vừa phải giữa các thương hiệu */
+    padding: 0 40px;
+    /* Khoảng cách vừa phải giữa các thương hiệu */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -801,7 +817,8 @@ h6,
 
 /* Kích thước logo vừa vặn, không quá to */
 .brand-item img {
-    height: 50px; /* Độ cao vừa phải, sang trọng */
+    height: 50px;
+    /* Độ cao vừa phải, sang trọng */
     max-width: 150px;
     object-fit: contain;
     display: block;
@@ -817,9 +834,27 @@ h6,
     0% {
         transform: translateX(0);
     }
+
     100% {
         /* Chạy mượt qua 1/3 độ dài (vì ta nhân bản thành 3 cụm logo) */
-        transform: translateX(-33.33%); 
+        transform: translateX(-33.33%);
     }
 }
 
+.facts .row {
+    align-items: stretch;
+}
+
+.facts .row>div {
+    display: flex;
+}
+
+.facts .text-center.border {
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
