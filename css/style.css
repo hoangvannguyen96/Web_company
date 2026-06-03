@@ -893,10 +893,179 @@ h6,
     0% {
         box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25);
     }
+
     70% {
         box-shadow: 0 0 0 12px rgba(0, 123, 255, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
     }
+}
+
+.policy-box {
+    background: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.policy-box:hover {
+    transform: translateY(-3px);
+}
+
+.policy-box h2 {
+    color: #0d1b2a;
+    margin-bottom: 18px;
+    font-size: 28px;
+    border-left: 5px solid #ff9800;
+    padding-left: 12px;
+}
+
+.policy-box p {
+    margin-bottom: 15px;
+}
+
+.policy-box ul {
+    padding-left: 25px;
+}
+
+.policy-box ul li {
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   SUPPORT PAGE
+========================== */
+
+.support-hero {
+    background: linear-gradient(135deg, #0d6efd, #0046b3);
+    padding: 100px 0;
+    color: #fff;
+}
+
+.support-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.support-hero p {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+    margin: 5px;
+}
+
+.support-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    height: 100%;
+    transition: .3s;
+    box-shadow: 0 5px 25px rgba(0,0,0,.08);
+}
+
+.support-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.support-card i {
+    font-size: 50px;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.support-card h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.support-process {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.step-box {
+    padding: 20px;
+}
+
+.step-box span {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.step-box h5 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+}
+
+.accordion-button {
+    font-weight: 600;
+}
+
+.support-contact {
+    position: relative;
+    background-image: url('../img/anhnen2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 30px 0;
+    color: white;
+    overflow: hidden;
+}
+
+.support-contact h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.support-contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-buttons .btn {
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+
+    .support-hero {
+        padding: 70px 0;
+    }
+
+    .support-hero h1 {
+        font-size: 34px;
+    }
+
+    .support-hero p {
+        font-size: 16px;
+    }
+
 }
